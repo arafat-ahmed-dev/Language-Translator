@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Translator || Aam Arafat</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main class="container">
+    <h1>Faltu Translator</h1>
+    <div class="wrapper">
+      <div class="left-side">
+        <div class="from-textarea">
+          <textarea placeholder="Enter your text.." id="from-text"></textarea>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="to-textarea">
+          <textarea placeholder="transation" readonly disabled id="to-text"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="left-controls">
+        <div class="icon from">
+          <i class="fa-solid fa-copy" id="from copy"></i>
+          <i class="fa-solid fa-volume-high" id="from speaker"></i>
+        </div>
+        <select class="langtag">
+
+        </select>
+      </div>
+      <div class="exchange"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+      <div class="right-controls">
+        <select class="langtag">
+
+        </select>
+        <div class="icon to">
+          <i class="fa-solid fa-volume-high" id="to speaker"></i>
+          <i class="fa-solid fa-copy" id="to copy"></i>
+        </div>
+      </div>
+    </div>
+    <button id="translate">Translate</button>
+  </main>
+
+  <script src="./languages.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
