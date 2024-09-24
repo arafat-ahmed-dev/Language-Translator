@@ -36,8 +36,8 @@ exchange.addEventListener("click", () => {
 
 // Function to fetch translated text from an external translation API
 async function get_Translate_value(text) {
-  let translateFrom = langtag[0].value.toString().split('-')[0];  // Extract language code for 'from'
-  let translateTo = langtag[1].value.toString().split('-')[0];  // Extract language code for 'to'
+  let translateFrom = langtag[0].value;  // Extract language code for 'from'
+  let translateTo = langtag[1].value;  // Extract language code for 'to'
   try {
     // Construct API URL using 'from' and 'to' languages
     const url = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
